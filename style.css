@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 /* button styles */
 .btn {
   padding: 10px 60.5px;
@@ -34,8 +38,11 @@ body {
 .btn-primary {
   background-color: var(--orange);
 }
+.btn-secondary {
+  background-color: var(--black);
+}
 
-/* navbar styles */
+/* ========== navbar styles =========== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -94,10 +101,39 @@ body {
   border-top: 1px solid var(--orange);
 }
 
+/* ========== banner styles =========== */
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.banner-description {
+  font-size: 1.25rem;
+}
+.orange {
+  color: var(--orange);
+}
+.sky-blue {
+  color: var(--sky-blue);
+}
+.banner-image {
+  width: 40rem;
+}
+
 /* media queries */
 @media screen and (max-width: 576px) {
-  .navbar {
-    margin: 0.75rem 1rem;
+  /* navbar media queries */
+  .container {
+    margin: 0 1rem;
   }
   .menu-icon,
   .divider {
@@ -107,5 +143,24 @@ body {
   .logo-text,
   .menu-btn {
     display: none;
+  }
+
+  /* banner media queries */
+  .banner {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .banner-content {
+    align-items: center;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-description {
+    font-size: 0.875rem;
+  }
+  .banner-image {
+    width: auto;
   }
 }
