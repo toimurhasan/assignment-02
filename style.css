@@ -18,6 +18,8 @@
 /* base styles */
 body {
   font-family: "Quicksand", serif;
+}
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -204,6 +206,9 @@ main {
 }
 
 /* ======= stories styles ======= */
+.stories {
+  background: linear-gradient(to top, #fea1016c, #ffffff00);
+}
 .stories-heading {
   font-size: 2.875rem;
   padding: 2.875rem 0 5rem;
