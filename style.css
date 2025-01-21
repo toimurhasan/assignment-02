@@ -280,7 +280,7 @@ main {
   align-items: center;
   gap: 0.5rem;
 }
-.logo-text {
+.footer-logo-text {
   color: #fff;
   font-weight: 700;
   font-size: 2.5rem;
@@ -320,6 +320,10 @@ main {
   .logo-text,
   .menu-btn {
     display: none;
+  }
+  .logo img {
+    width: 46px;
+    height: 46px;
   }
 
   /* banner media queries */
@@ -364,6 +368,9 @@ main {
     display: none;
   }
   /* stories media queries */
+  .stories {
+    padding-bottom: 0.5rem;
+  }
   .stories-heading {
     font-size: 1.625rem;
     padding: 2.5rem 0 1.25rem;
@@ -385,6 +392,8 @@ main {
   }
   /* footer media queries */
   .footer-container {
+    padding: 4rem 0;
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
