@@ -244,9 +244,11 @@ main {
   margin-bottom: 3rem;
   font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
 }
 .right .story-heading {
   font-weight: 700;
+  cursor: pointer;
 }
 .story-description {
   color: #666666;
@@ -331,5 +333,11 @@ main {
   }
   .right .story-content {
     padding: 1rem 1.4rem;
+  }
+  .stories-btn {
+    margin: 1.25rem 0 2.5rem;
+  }
+  .btn-secondary {
+    font-size: 1rem;
   }
 }
