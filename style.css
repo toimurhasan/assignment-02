@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+/* ========== shared styles =========== */
+
 /* global variables */
 :root {
   --orange: #fea301;
@@ -28,7 +30,7 @@ body {
 .btn {
   padding: 0.7rem 3rem;
   border: none;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   font-size: 1.25rem;
   color: #fff;
   cursor: pointer;
@@ -45,14 +47,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 /* logo styles */
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .logo-text {
   font-size: 2rem;
@@ -71,6 +73,8 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
+
+/* menu item colors */
 .menu-item#home {
   color: var(--orange);
 }
@@ -93,7 +97,7 @@ body {
   color: var(--black);
 }
 
-/* divider on small device */
+/* divider (shown in small device) */
 .divider {
   display: none;
   border-top: 1px solid var(--orange);
@@ -141,6 +145,7 @@ main {
   font-size: 2.875rem;
   text-align: center;
 }
+
 /* cards styles */
 .cards {
   display: flex;
@@ -172,6 +177,8 @@ main {
   font-weight: 700;
   text-decoration: none;
 }
+
+/* card background colors */
 #card-1 {
   background: linear-gradient(to bottom, #def5ff, rgba(255, 255, 255, 0));
   border: 1px solid #def5ff;
@@ -184,6 +191,8 @@ main {
   background: linear-gradient(to bottom, #eee1ff, rgba(255, 255, 255, 0));
   border: 1px solid #f2e8ff;
 }
+
+/* card link colors */
 #card-1 .card-link a {
   color: #64c8ff;
 }
@@ -193,6 +202,7 @@ main {
 #card-3 .card-link a {
   color: #8700ff;
 }
+
 /* see more arrows styles */
 .see-more {
   margin-top: 5rem;
@@ -247,15 +257,21 @@ main {
   padding: 3rem;
   position: relative;
 }
-.right .story-content {
-  padding: 2rem;
-  flex: 1;
-}
 .left .story-heading {
   margin-bottom: 3rem;
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
+}
+.right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+.right .story-content {
+  padding: 2rem;
+  flex: 1;
 }
 .right .story-heading {
   font-weight: 700;
@@ -264,17 +280,12 @@ main {
 .story-description {
   color: #666666;
 }
-.right {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
-}
 .stories-btn {
   display: flex;
   place-content: center;
   margin-top: 5rem;
 }
+
 /* ======= date bar style ======= */
 .date-bar {
   color: #fff;
@@ -290,6 +301,8 @@ main {
   top: -1.2rem;
   font-size: 0.9rem;
 }
+
+/* bar date background colors */
 .story-2 .date-bar {
   background-color: #95b226;
 }
@@ -302,6 +315,7 @@ main {
 .story-5 .date-bar {
   background-color: var(--orange);
 }
+
 /*  M A R Q U E E   T A G  */
 .marquee {
   color: #0072a7;
@@ -309,6 +323,7 @@ main {
   font-weight: 600;
   padding: 0.5rem;
 }
+
 /* ======= footer styles ======= */
 .footer {
   background-color: #01acfd;
@@ -351,6 +366,7 @@ main {
 .social-icons img {
   cursor: pointer;
 }
+
 /* media queries */
 @media screen and (max-width: 576px) {
   /* navbar media queries */
@@ -377,7 +393,7 @@ main {
   .banner {
     margin-top: 1.5rem;
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 1.25rem;
   }
   .banner-content {
     align-items: center;
@@ -411,6 +427,7 @@ main {
   .card-link {
     font-size: 0.65rem;
   }
+
   /* stories media queries */
   .stories {
     padding-bottom: 0.5rem;
@@ -432,17 +449,20 @@ main {
     font-size: 1rem;
     padding: 0.5rem 2rem;
   }
+
   /* datebar media queries */
   .right .date-bar {
     padding: 0.5rem 0.8rem;
     top: -0.9rem;
     font-size: 0.5rem;
   }
+
   /* marquee media queries */
   .marquee {
     padding: 0;
     font-size: 1rem;
   }
+
   /* footer media queries */
   .footer-container {
     padding: 4rem 0;
@@ -468,6 +488,6 @@ main {
     margin-top: 1rem;
   }
   .social-icons img {
-    width: 33px;
+    width: 2rem;
   }
 }
