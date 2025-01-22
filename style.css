@@ -215,7 +215,9 @@ main {
 /* ======= stories styles ======= */
 .stories {
   background: linear-gradient(to top, #fea1016c, #ffffff00);
-  padding-bottom: 3.75rem;
+}
+.stories .container {
+  margin-bottom: 3.75rem;
 }
 .stories-heading {
   font-size: 2.875rem;
@@ -299,6 +301,13 @@ main {
 }
 .story-5 .date-bar {
   background-color: var(--orange);
+}
+/*  M A R Q U E E   T A G  */
+.marquee {
+  color: #0072a7;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.5rem;
 }
 /* ======= footer styles ======= */
 .footer {
@@ -423,11 +432,16 @@ main {
     font-size: 1rem;
     padding: 0.5rem 2rem;
   }
-  /* datebar styles */
+  /* datebar media queries */
   .right .date-bar {
     padding: 0.5rem 0.8rem;
     top: -0.9rem;
     font-size: 0.5rem;
+  }
+  /* marquee media queries */
+  .marquee {
+    padding: 0;
+    font-size: 1rem;
   }
   /* footer media queries */
   .footer-container {
